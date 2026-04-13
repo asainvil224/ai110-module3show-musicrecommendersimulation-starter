@@ -218,8 +218,8 @@ I learned that recommender systems are very complex and require good design. It 
 
 ## Screenshots
 
-<img src="Screenshot1.png" width="400"/>
+<img src="image/Screenshot1.png" width="400"/>
 
-<img src="Screenshot2.png" width="400"/>
+<img src="image/Screenshot2.png" width="400"/>
 
-<img src="Screenshot3.png" width="400"/>
+<img src="image/Screenshot3.png" width="400"/>
