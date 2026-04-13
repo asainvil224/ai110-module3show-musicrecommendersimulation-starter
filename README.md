@@ -216,7 +216,7 @@ A few sentences about what you learned:
 
 I learned that recommender systems are very complex and require good design. It was interesting how the recommender used certain algorithms behind the scenes to calculate the user's preference. It made think how each website I visit, it continuously keep track of my data to feed into the recommendation system.
 
-## Screenshots
+
 
 ![App Screenshot](image/Screenshot1.png)
 ![App Screenshot](image/Screenshot2.png)
