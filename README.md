@@ -77,7 +77,7 @@ Use this section to document the experiments you ran. For example:
 - What happened when you added tempo or valence to the score
 - How did your system behave for different types of users
 
----
+When experimenting with the recommender, changing the genre weight from 2.0 to 0.5 reduced its dominance in scoring, leading to more balanced recommendations that incorporated energy and mood matches, though it sometimes diluted genre-specific results. Adding tempo or valence to the score enhanced precision for users valuing rhythmic or emotional attributes by normalizing distances and integrating them into the total score, which improved alignment with nuanced preferences but required careful range handling to prevent skewing. For different user types, the system performed well for straightforward profiles like high-energy pop enthusiasts, delivering consistent top matches, but struggled with eclectic users by over-relying on genre, highlighting the need for adaptive weighting in diverse scenarios.
 
 ## Limitations and Risks
 
@@ -91,7 +91,7 @@ Examples:
 
 You will go deeper on this in your model card.
 
----
+The recommender system has several key limitations, including its reliance on a small dataset of only about 17 songs, which restricts the variety and depth of recommendations. It does not account for lyrical content, cultural context, or user history beyond basic preferences, potentially leading to oversimplified matches. Additionally, the scoring algorithm may disproportionately favor certain genres or moods due to fixed weights, and it assumes all users have straightforward, static tastes without considering diversity or evolving preferences, which could result in biased or unfair outcomes in real-world applications.
 
 ## Reflection
 
@@ -105,7 +105,12 @@ Write 1 to 2 paragraphs here about what you learned:
 - about where bias or unfairness could show up in systems like this
 
 
----
+Through building this music recommender, I learned that recommenders transform user preferences and song features into predictions by calculating similarity scores based on categorical matches like genre and mood, as well as numerical proximities for attributes such as energy and tempo, often weighted to prioritize certain aspects, resulting in ranked recommendations that mirror how real-world systems like Spotify use algorithms to predict user satisfaction from data patterns. Additionally, bias and unfairness can emerge in such systems when the dataset is limited or skewed toward specific genres, leading to underrepresented groups or tastes being overlooked, or when fixed scoring weights disproportionately favor mainstream preferences, potentially excluding diverse users and reinforcing cultural or demographic imbalances if deployed in broader applications.
+
+
+<img src="image/Screenshot1.png" width="500">
+<img src="image/Screenshot2.png" width="500">
+<img src="image/Screenshot3.png" width="500">
 
 ## 7. `model_card_template.md`
 
@@ -218,6 +223,3 @@ I learned that recommender systems are very complex and require good design. It 
 
 
 
-![App Screenshot](image/Screenshot1.png)
-![App Screenshot](image/Screenshot2.png)
-![App Screenshot](image/Screenshot3.png)
