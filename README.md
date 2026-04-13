@@ -11,7 +11,7 @@ Your goal is to:
 - Evaluate what your system gets right and wrong
 - Reflect on how this mirrors real world AI recommenders
 
-Replace this paragraph with your own summary of what your version does.
+
 
 ---
 
@@ -29,7 +29,10 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
----
+The most effective features are genre, mood, energy, valence, tempo_bpm, danceability and acousticness. The user profile will store the user's preference data that the recommender uses to compare songs. Fields like preferred genre, preferred moods, target values for numerical fetures and weights for how important each feature is. My recommender will compute a score for each song by comparing categorical features like genre and mood, give a positive match score if the song’s genre or mood matches the user’s preferred values.
+Compare numerical features like energy, valence, tempo_bpm, danceability, and acousticness. Measure how close each song value is to the user’s preferred target. Convert that distance into a similarity score, e.g. 1 - abs(song_value - user_target) / range. Combine those match scores into one total score. Use weights if some features matter more than others. Return the total score so songs can be ranked from best match to worst match. The recommender then recommends the top songs based on its ranking.
+
+
 
 ## Getting Started
 
